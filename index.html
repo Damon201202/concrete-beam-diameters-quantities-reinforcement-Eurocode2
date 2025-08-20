@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Détermination Diamètre et Nombre de Barres d'Acier</title>
+  <link rel="stylesheet" href="styles.css"> <!-- ton fichier CSS -->
+</head>
+<body>
+
+<div class="h2">
+    <div class="h2-title">
+      <h1>
+        <span class="h2-title_summary">DÉTERMINATION DIAMÈTRE ET NOMBRE DE BARRES D'ACIER
+		<br>pour une poutre en béton armé,
+		<br>à partir de la section d’acier (As) selon l’Eurocode 2</span>
+      </h1>
+    </div>
+  </div>
+
+<div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Section d’acier en traction :</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_symb">
+            <p class="calcul-four_symb">
+              A<sub>s</sub>
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_color">
+           <input type="number" class="calcul-four_value calcul-four_as" value="10">
+          </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              cm²
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_text">
+            
+        </div>
+        </div>
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Largeur de la poutre :</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_symb">
+            <p class="calcul-four_symb">
+              b
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_color">
+           <input type="number" class="calcul-four_value calcul-four_b" value="20">
+          </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              cm
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_text">
+            
+        </div>
+        </div>
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Hauteur de la poutre :</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_symb">
+            <p class="calcul-four_symb">
+              h
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_color">
+           <input type="number" class="calcul-four_value calcul-four_h" value="40">
+          </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              cm
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four-rem_h">
+          
+        </div>
+        </div>
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Enrobage minimal :</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_symb">
+            <p class="calcul-four_symb">
+              c<sub>min</sub>
+          </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_color">
+           <input type="number" class="calcul-four_value calcul-enrobage_min" value="1.5">
+          </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              cm
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_text">
+         <a href="https://beton-guide.com/calcul-enrobage-beton-selon-eurocode-2-outil-en-ligne-gratuit.html"> Calcul d’enrobage minimal</a>.   
+        </div>
+        </div>
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Enrobage réel:</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_symb">
+            <p class="calcul-four_symb">
+              c
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_color">
+           <input type="number" class="calcul-four_value calcul-enrobage_reel" value="2.5">
+          </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              cm
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_text">
+         L'enrobage réel c doit être supérieur ou égal à c<sub>nom</sub>.   
+        </div>
+        </div>
+        
+      
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Dimension nominale du plus gros granulat:</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_symb">
+            <p class="calcul-four_symb">
+              D<sub>max</sub>
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_color">
+           <input type="number" class="calcul-four_value calcul-dmax" value="20">
+          </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              mm
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_text">
+         Dans le béton courant la dimension maximale D<sub>max</sub> ≤ 22,4 mm.   
+        </div>
+        </div>
+        <div class="alert alert-element-classe-dmax"></div>
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Diamètre de l'acier transversal cadre :</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_symb">
+            <p class="calcul-four_symb">
+              ∅<sub>w,cad</sub>
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four-select">
+           <select class="calcul-four-select calcul-four-select-diam_cad">
+            <option value="6" selected>6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              mm
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_text calcul-four-texte-diam_cad">
+          Acier ∅6 HA  conseillé pour d ≤ 35cm; 
+        </div>
+        </div>
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Pourcentage maximal d’ajustement de As :</p>
+      </div>
+        <div class="calcul-four_columns calcul-four_2">
+            <p class="calcul-four_symb">
+              %A<sub>s_max</sub>
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_color">
+          <input type="number" class="calcul-four_value calcul-four_as_marge_max" value="20">
+      </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              %
+            </p>
+      </div>
+        <div class="calcul-four_columns calcul-four_text" style="font-size: 0.8rem; padding-right: 0.4rem;">
+        Le pourcentage maximal que le programme peut ajouter à la section d’acier calculée (As) lors de la disposition de l’acier dans une poutre. 
+        </div>
+  </div>
+    <div class="alert alert-element_as_marge_max"></div>
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Hauteur utile réelle de la section :</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_2">
+            <p class="calcul-four_symb">
+             d<sub>reel</sub>
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_result calcul-four_dreel">
+          
+          </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              cm
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four-text_dreel">
+       
+        </div>
+        </div>
+        
+        <div class="calcul-four">
+        <div class="calcul-four_columns calcul-four_1">
+          <p class="calcul-four_text">Distance verticale entre les lits :</p>
+          </div>
+        <div class="calcul-four_columns calcul-four_2">
+            <p class="calcul-four_symb">
+             a<sub>1</sub>
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four_result calcul-four_a1">
+          
+          </div>
+        <div class="calcul-four_columns calcul-four_4">
+            <p class="calcul-four_unit">
+              cm
+            </p>
+          </div>
+        <div class="calcul-four_columns calcul-four-text_a1">
+       
+        </div>
+        </div>
+    
+    <div class="table-acier_long"></div>
+
+
+<script src="disposition-aciers.js" defer></script>
+
+</body>
+</html>
